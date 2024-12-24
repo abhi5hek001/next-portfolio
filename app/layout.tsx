@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 };
 
 import { ThemeProvider } from "@/components/theme-provider"
-import Navbar from "@/components/Navbar";
+import Header from "@/app/header";
 
 export default function RootLayout({
   children,
@@ -38,7 +38,7 @@ export default function RootLayout({
           themes={["light", "dark", "orange", "blue"]}
             disableTransitionOnChange
           >
-            <Navbar />
+            <Header />
           {children}
         </ThemeProvider>
       </body>
