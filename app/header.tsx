@@ -13,12 +13,12 @@ const navItems = [
 
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
- 
+
   return (
     <>
       <section className="px-5 h-[10vh] floating top-10 flex justify-between items-center gap-5 bg-secondary bg-opacity-10">
@@ -41,15 +41,21 @@ export default function Header() {
           </button>
         </div>
 
-          <div className={`hidden md:flex flex-row md:items-center gap-4`}>
+        <div className={`hidden md:flex flex-row md:items-center gap-4`}>
           {navItems.map((item) => (
-            <a
+            <div
               key={item.label.toLowerCase()}
-              href={`${item.url}`}
-              className="text-lg text-primary font-bold hover:underline underline-offset-8"
+              className="relative group mb-2"
+              onClick={() => setIsOpen(false)}
             >
-              {item.label}
-            </a>
+              <a
+                href={`${item.url}`}
+                className="text-lg text-primary font-bold underline-offset-10 transition-transform duration-300 group-hover:-translate-y-2"
+              >
+                {item.label}
+              </a>
+              <span className="absolute inset-x-0 bottom-0 h-1 bg-primary rounded-md transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+            </div>
           ))}
           <ThemeToggle />
         </div>
@@ -76,14 +82,18 @@ export default function Header() {
           {navItems.map((item) => (
             <a
               key={item.label.toLowerCase()}
-              href={`${item.url}`} 
-              className="text-lg text-primary font-bold hover:underline underline-offset-8 mb-2"
-              onClick={() => setIsOpen(false)} 
+              href={`${item.url}`}
+              className="relative text-lg text-primary font-bold group p-2"
             >
-              {item.label}
+              <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+                {item.label}
+              </span>
+              <span className="absolute left-0 right-0 bottom-[-4px] h-full bg-primary transform scale-y-0 origin-top transition-transform duration-300 group-hover:scale-y-100"></span>
             </a>
           ))}
-          <ThemeToggle />
+          <div className="mt-4">
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </>

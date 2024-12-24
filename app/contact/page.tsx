@@ -39,7 +39,7 @@ export default function Contact() {
                                         Title
                                     </label>
                                     <Input type="text" name="title" id="title" placeholder="Enter title" required />
-                                </div>``
+                                </div>
 
                                 <div className="mb-4">
                                     <label htmlFor="message" className="block text-sm font-medium mb-2">
