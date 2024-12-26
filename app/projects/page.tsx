@@ -1,7 +1,7 @@
 "use client";
 
 import Template from '@/app/projects/template';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/components/ui/card';
 import Image from 'next/image';
 import ggjImage from '@/public/projects/ggj.webp'
 import quotesWebsiteImage from '@/public/projects/quotes-website.webp'

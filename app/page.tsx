@@ -53,7 +53,7 @@ export default function Hero() {
 
                 <AnimatedBlock direction="right">
                     <div className="lg:ml-8">
-                        <h1 className="text-7xl font-montserrat text-muted-foreground font-bold">Hey There, I'm <br /> <span className='text-primary'>Abhishek</span><span className="text-muted-foreground"> Sahay</span>
+                        <h1 className="text-7xl font-montserrat text-muted-foreground font-bold">Hey There, I&apos;m <br /> <span className='text-primary'>Abhishek</span><span className="text-muted-foreground"> Sahay</span>
                         </h1>
                         <h1 className="mt-2 font-roboto-condensed text-3xl text-muted-foreground">
                             <Typewriter
