@@ -37,7 +37,7 @@ export default function About() {
     ];
 
     return (
-        <section className="flex flex-wrap p-10 py-10 items-center justify-around w-full h-[80vh] overflow-x-hidden">
+        <section className="flex flex-wrap px-1 lg:p-6 py-10 items-center justify-around w-full h-[80vh] overflow-x-hidden">
             <Template>
                 <AnimatedBlock direction="left">
                     <div className="my-10">
@@ -53,11 +53,11 @@ export default function About() {
                                 }}
                             />
                         </h1>
-                        <div className="my-4 gap-x-16 gap-y-4 w-96 grid grid-cols-6 flex-wrap">
+                        <div className="my-4 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                             {skillIcons.map(({ icon }, idx) => (
                                 <a
                                     key={idx}
-                                    className="hover:text-accent-foreground text-primary transition duration-200"
+                                    className="hover:text-accent-foreground text-primary transition duration-200 flex items-center justify-center"
                                 >
                                     {icon}
                                 </a>
@@ -67,16 +67,17 @@ export default function About() {
                 </AnimatedBlock>
 
                 <AnimatedBlock direction="right">
-                    <div className="relative inline-block mx-4">
+                    <div className="relative inline-block">
                         <div className="absolute inset-0 rounded-full animate-pulseCustom">
                         </div>
                         <Image
                             src={college}
-                            alt='IIT Sricity'
-                            className='rounded-full h-[35rem] w-[35rem] object-cover z-10'
+                            alt='IIIT Sricity'
+                            className="rounded-full w-[25em] md:w-[35em] lg:w-[40em] h-[25em] md:h-[35em] lg:h-[40em] object-cover z-10"
                         />
                     </div>
                 </AnimatedBlock>
+
             </Template>
         </section>
     );

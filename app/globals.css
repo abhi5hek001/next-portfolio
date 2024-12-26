@@ -14,10 +14,6 @@ html {
   }
 }
 
-:root {
-  --navbar-height: 5rem;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;

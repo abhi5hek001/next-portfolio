@@ -23,10 +23,10 @@ export default function Contact() {
     };    
 
     return (
-        <section className="flex flex-wrap px-10 my-10 items-center justify-around w-full h-[80vh]">
+        <section className="flex flex-wrap sm:px-3 sm:mx-10 my-10 items-center justify-around w-full h-[80vh]">
             <Template>
                 <AnimatedBlock direction="left">
-                    <Card className="w-full relative rounded-lg shadow-[0_0px_35px_-15px_rgba(0,0,0,0.9)] hover:shadow-2xl shadow-primary inline-block mt-10 mb-10">
+                    <Card className="w-[25rem] relative rounded-lg shadow-[0_0px_35px_-15px_rgba(0,0,0,0.9)] hover:shadow-2xl shadow-primary inline-block mt-10 mb-10">
                         {/* <div className="absolute inset-0 rounded-lg animate-pulseCustom">
                         </div> */}
                         <CardHeader>

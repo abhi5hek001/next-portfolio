@@ -37,22 +37,22 @@ export default function Hero() {
     ];
 
     return (
-        <section className="flex flex-wrap px-10 py-10 items-center justify-around w-full h-[80vh]">
+        <section className="flex flex-wrap px-1 lg:p-6 py-10 items-center justify-around w-full h-[80vh] overflow-x-hidden">
             <Template>
                 <AnimatedBlock direction="left">
-                    <div className="relative inline-block mt-10 mb-10">
+                    <div className="relative inline-block my-10">
                         <div className="absolute inset-0 rounded-full animate-pulseCustom">
                         </div>
                         <Image
                             src={profile}
                             alt='Profile'
-                            className='rounded-full h-[35rem] w-[35rem] object-cover z-10'
+                            className='rounded-full w-[25em] md:w-[35em] lg:w-[40em] h-[25em] md:h-[35em] lg:h-[40em] object-cover z-10'
                         />
                     </div>
                 </AnimatedBlock>
 
                 <AnimatedBlock direction="right">
-                    <div className="ml-12">
+                    <div className="lg:ml-8">
                         <h1 className="text-7xl font-montserrat text-muted-foreground font-bold">Hey There, I'm <br /> <span className='text-primary'>Abhishek</span><span className="text-muted-foreground"> Sahay</span>
                         </h1>
                         <h1 className="mt-2 font-roboto-condensed text-3xl text-muted-foreground">

@@ -31,7 +31,7 @@ export default function About() {
                     {
                         projectList.map((project, idx) => {
                             return (
-                                <Card key={idx} className='w-[20em] h-[25em] flex flex-col gap-5 flex-wrap justify-between shadow-[0_0px_35px_-15px_rgba(0,0,0,0.9)] hover:shadow-2xl shadow-primary items-center bg-secondary'>
+                                <Card key={idx} className='w-[20em] h-[28em] flex flex-col gap-5 flex-wrap justify-between shadow-[0_0px_35px_-15px_rgba(0,0,0,0.9)] hover:shadow-2xl shadow-primary items-center bg-secondary'>
                                     <CardHeader className='w-full h-40 relative'>
                                         <Image
                                             src={project.image}
