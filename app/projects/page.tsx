@@ -4,35 +4,35 @@ import Template from '@/app/projects/template';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../components/ui/card';
 import Image from 'next/image';
 import ggjImage from '@/public/projects/ggj.webp'
-import newsAppImage from '@/public/projects/news-app.webp'
+import quotesWebsiteImage from '@/public/projects/quotes-website.webp'
 import { MdLink } from "react-icons/md";
 
 const projectList = [
     {
         title: 'Voice Controlled Gaming Studio | GGJ 2024',
-        description: 'A Global Game Jam 2024 project. This project is a voice controlled gaming website. Game Jam 2024 projectGame Jam 2024 projectGame Jam 2024 project ',
+        description: 'A Global Game Jam 2024 project. This project is a voice controlled gaming website where you can control games with your voice.',
         image: ggjImage,
-        link: '/project/1'
+        link: 'https://abhi5hek001.github.io/Gaming-Hub/'
     },
     {
-        title: 'News App',
-        description: 'This is a React based News appThis is a React based News appThis is a React based News appThis is a React based News appThis is a React based News appThis is a React based News appThis is a React based News appThis is a React based News app',
-        image: newsAppImage,
-        link: '/project/2'
+        title: 'Daily Quotes Website',
+        description: 'A Quote Generator website which uses API to fetch quotes such as motivational and daily quotes.',
+        image: quotesWebsiteImage,
+        link: 'https://abhi5hek001.github.io/Quote-Generator/'
     },
 ]
 
 export default function About() {
 
     return (
-        <section className="flex flex-wrap px-10 items-center justify-center w-full h-[80vh]">
+        <section className="flex flex-wrap px-2 items-center justify-center w-full h-[80vh]">
             <Template>
                 <div className='flex justify-center flex-wrap gap-8 my-10 sm:mx-5 md:mx-15 lg:mx-20'>
                     {
                         projectList.map((project, idx) => {
                             return (
-                                <Card key={idx} className='w-[20em] h-[28em] flex flex-col gap-5 flex-wrap justify-between shadow-[0_0px_35px_-15px_rgba(0,0,0,0.9)] hover:shadow-2xl shadow-primary items-center bg-secondary'>
-                                    <CardHeader className='w-full h-40 relative'>
+                                <Card key={idx} className='w-[25em] h-[32em] flex flex-col gap-5 flex-wrap justify-between shadow-[0_0px_35px_-15px_rgba(0,0,0,0.9)] hover:shadow-2xl shadow-primary items-center bg-secondary'>
+                                    <CardHeader className='w-full h-72 relative'>
                                         <Image
                                             src={project.image}
                                             alt="Image Not Found"

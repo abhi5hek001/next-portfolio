@@ -16,8 +16,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Abhishek Sahay",
-  description: "This is a portfolio website of Abhishek Sahay.",
+  title: "Abhishek Sahay | Portfolio",
+  description: "Abhishek Sahay is a full stack web developer and a computer science student in IIIT Sricity.",
 };
 
 export default function RootLayout({
