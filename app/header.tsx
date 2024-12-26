@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 
-import { ThemeToggle } from "@/components/theme-toggle";
+import { ThemeToggle } from "@/app/components/theme-toggle";
+import { GoSidebarExpand, GoSidebarCollapse } from "react-icons/go";
+
 
 const navItems = [
   { label: "Home", url: "/" },
@@ -22,22 +24,13 @@ export default function Header() {
   return (
     <>
       <section className="px-5 h-[10vh] floating top-10 flex justify-between items-center gap-5 bg-secondary bg-opacity-10">
-        <h1 className="text-3xl text-primary font-bold">Abhishek
+        <h1 className="text-4xl text-primary font-bold">Abhishek
           <span className="text-muted-foreground"> Sahay</span>
         </h1>
 
         <div className="md:hidden flex items-center">
           <button onClick={toggleMenu} className="focus:outline-none">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="w-8 h-8"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
+            <GoSidebarExpand className="text-primary h-7 w-7" />
           </button>
         </div>
 
@@ -65,30 +58,19 @@ export default function Header() {
         <div className="fixed inset-0 bg-black opacity-50 z-10" onClick={() => setIsOpen(false)} />
       )}
 
-      <div className={`fixed top-0 right-0 w-64 h-full bg-muted-foreground shadow-lg transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'} z-20`}>
+      <div className={`fixed top-0 right-0 w-64 h-full bg-secondary shadow-lg transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'} z-20`}>
         <div className="flex flex-col p-5">
           <button onClick={toggleMenu} className="self-end mb-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="w-8 h-8"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
+           <GoSidebarCollapse className="text-primary h-7 w-7" />
           </button>
           {navItems.map((item) => (
             <a
               key={item.label.toLowerCase()}
               href={`${item.url}`}
-              className="relative text-lg text-primary font-bold group p-2"
+              className="relative text-lg hover:scale-110 left-3 transition-transform duration-300 ease-in-out text-accent-foreground font-bold group p-2"
             >
-              <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
-                {item.label}
-              </span>
-              <span className="absolute left-0 right-0 bottom-[-4px] h-full bg-primary transform scale-y-0 origin-top transition-transform duration-300 group-hover:scale-y-100"></span>
+              <span className="relative z-10">{item.label}</span>
+              <span className="absolute inset-0 bottom-0 h-[2px] bg-accent opacity-0 scale-x-0 origin-center transition-all duration-300 group-hover:opacity-100 group-hover:scale-x-100"></span>
             </a>
           ))}
           <div className="mt-4">

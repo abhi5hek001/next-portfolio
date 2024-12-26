@@ -1,11 +1,13 @@
 "use client";
 
 import Typewriter from 'typewriter-effect'
-import Template from '../template';
-import { AnimatedBlock } from '../animatedBlock';
+import Template from '@/app/template';
+import { AnimatedBlock } from '@/app/animatedBlock';
 
 import { SiNextdotjs, SiMongodb, SiGit, SiPython, SiJavascript, SiReact, SiExpress, SiMysql, SiNodedotjs, SiCanva, SiNumpy, SiPandas, SiTailwindcss, SiShadcnui, SiHtml5, SiCss3, SiFigma, SiLinux, SiC, SiCplusplus, SiTypescript } from "react-icons/si";
 import { FaJava } from 'react-icons/fa';
+import Image from 'next/image';
+import college from '@/public/iiit-sri-city.webp'
 
 export default function About() {
 
@@ -35,13 +37,13 @@ export default function About() {
     ];
 
     return (
-        <section className="flex flex-wrap px-10 items-center justify-around w-full h-[80vh] overflow-x-hidden">
+        <section className="flex flex-wrap p-10 py-10 items-center justify-around w-full h-[80vh] overflow-x-hidden">
             <Template>
                 <AnimatedBlock direction="left">
                     <div className="my-10">
-                        <h1 className=" text-7xl text-muted-foreground font-bold">I'm enrolled<br /><span className='text-primary'>IIIT</span><span className="text-muted-foreground"> Sricity, Chittoor</span>
+                        <h1 className=" text-7xl font-montserrat text-muted-foreground font-bold">Enrolled In<br /><span className='text-primary'>IIIT Sricity</span><span className="text-muted-foreground">, Chittoor</span>
                         </h1>
-                        <h1 className="mt-2 text-3xl text-muted-foreground">
+                        <h1 className="mt-2 text-3xl font-roboto-condensed text-muted-foreground">
                             <Typewriter
                                 options={{
                                     strings: ['Pursuing B.Tech', 'Computer Science Engineer', 'Pre-Final Year Student'],
@@ -68,10 +70,10 @@ export default function About() {
                     <div className="relative inline-block mx-4">
                         <div className="absolute inset-0 rounded-full animate-pulseCustom">
                         </div>
-                        <img
-                           src="https://i.ibb.co/fxM6fFD/iiit-sri-city.jpg"
-                            alt="IIIT Sri City"
-                            className="rounded-full h-[35rem] w-[35rem] object-cover z-10"
+                        <Image
+                            src={college}
+                            alt='IIT Sricity'
+                            className='rounded-full h-[35rem] w-[35rem] object-cover z-10'
                         />
                     </div>
                 </AnimatedBlock>

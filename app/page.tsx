@@ -2,9 +2,11 @@
 
 import Typewriter from 'typewriter-effect'
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
-import { Button } from '../components/ui/button';
-import Template from './template';
-import { AnimatedBlock } from './animatedBlock';
+import { Button } from '@/app/components/ui/button';
+import Template from '@/app/template';
+import { AnimatedBlock } from '@/app/animatedBlock';
+import Image from 'next/image';
+import profile from '@/public/profile.webp'
 
 const RESUME_FILE_ID = '13EL39XKZ_qra4jWqZ_gBW2lY-lQrRmFs'
 const RESUME_LINK = `https://drive.google.com/uc?export=download&id=${RESUME_FILE_ID}`
@@ -35,25 +37,25 @@ export default function Hero() {
     ];
 
     return (
-        <section className="flex flex-wrap px-10 items-center justify-around w-full h-[80vh] overflow-x-hidden">
+        <section className="flex flex-wrap px-10 py-10 items-center justify-around w-full h-[80vh]">
             <Template>
                 <AnimatedBlock direction="left">
                     <div className="relative inline-block mt-10 mb-10">
                         <div className="absolute inset-0 rounded-full animate-pulseCustom">
                         </div>
-                        <img
-                            src="https://i.postimg.cc/Pxy7p6Fp/profile.jpg"
-                            alt="Profile"
-                            className="rounded-full h-[35rem] w-[35rem] object-cover z-10"
+                        <Image
+                            src={profile}
+                            alt='Profile'
+                            className='rounded-full h-[35rem] w-[35rem] object-cover z-10'
                         />
                     </div>
                 </AnimatedBlock>
 
                 <AnimatedBlock direction="right">
                     <div className="ml-12">
-                        <h1 className=" text-7xl text-muted-foreground font-bold">Hey There, I'm <br /> <span className='text-primary'>Abhishek</span><span className="text-muted-foreground"> Sahay</span>
+                        <h1 className="text-7xl font-montserrat text-muted-foreground font-bold">Hey There, I'm <br /> <span className='text-primary'>Abhishek</span><span className="text-muted-foreground"> Sahay</span>
                         </h1>
-                        <h1 className="mt-2 text-3xl text-muted-foreground">
+                        <h1 className="mt-2 font-roboto-condensed text-3xl text-muted-foreground">
                             <Typewriter
                                 options={{
                                     strings: ['A Frontend Developer', 'A Backend Developer'],

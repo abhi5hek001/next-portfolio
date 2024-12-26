@@ -9,6 +9,14 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				arizonia: ['Arizonia', 'cursive'],
+				'climate-crisis': ['Climate Crisis', 'sans-serif'],
+				lobster: ['Lobster', 'cursive'],
+				montserrat: ['Montserrat', 'sans-serif'],
+				'roboto-condensed': ['Roboto Condensed', 'sans-serif'],
+				monoton: ['Monoton', 'cursive']
+			},
 			animation: {
 				pulseCustom: 'pulse 5s infinite',
 			},

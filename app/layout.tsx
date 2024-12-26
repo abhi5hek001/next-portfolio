@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "@/app/globals.css";
+import { ThemeProvider } from "@/app/components/theme-provider"
+import Header from "@/app/header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,9 +20,6 @@ export const metadata: Metadata = {
   description: "This is a portfolio website of Abhishek Sahay.",
 };
 
-import { ThemeProvider } from "@/components/theme-provider"
-import Header from "@/app/header";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,14 +30,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-         <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-          themes={["light", "dark", "orange", "blue"]}
-            disableTransitionOnChange
-          >
-            <Header />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          themes={["light", "dark", "purple", "yellow", "pink", "orange", "blue", "green"]}
+          disableTransitionOnChange
+        >
+          <Header />
           {children}
         </ThemeProvider>
       </body>

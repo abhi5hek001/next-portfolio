@@ -1,11 +1,11 @@
 "use client";
 
-import Template from '../template';
-import { AnimatedBlock } from '../animatedBlock';
-import { Card, CardContent, CardHeader, CardTitle } from "../../components/ui/card";
-import { Input } from "../../components/ui/input";
-import { Textarea } from "../../components/ui/textarea";
-import { Button } from "../../components/ui/button";
+import Template from '@/app/template';
+import { AnimatedBlock } from '@/app/animatedBlock';
+import { Card, CardContent, CardHeader, CardTitle } from "@/app/components/ui/card";
+import { Input } from "@/app/components/ui/input";
+import { Textarea } from "@/app/components/ui/textarea";
+import { Button } from "@/app/components/ui/button";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
 export default function Contact() {
@@ -23,10 +23,10 @@ export default function Contact() {
     };    
 
     return (
-        <section className="flex flex-wrap px-10 items-center justify-around w-full h-[80vh]">
+        <section className="flex flex-wrap px-10 my-10 items-center justify-around w-full h-[80vh]">
             <Template>
                 <AnimatedBlock direction="left">
-                    <Card className="w-full relative rounded-lg shadow-xl shadow-primary inline-block mt-10 mb-10">
+                    <Card className="w-full relative rounded-lg shadow-[0_0px_35px_-15px_rgba(0,0,0,0.9)] hover:shadow-2xl shadow-primary inline-block mt-10 mb-10">
                         {/* <div className="absolute inset-0 rounded-lg animate-pulseCustom">
                         </div> */}
                         <CardHeader>
