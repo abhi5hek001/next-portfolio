@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <>
-      <section className="px-5 sm:h-[10vh] h-[15vh] floating top-10 flex justify-between items-center gap-5 bg-secondary bg-opacity-10">
+      <section className="px-5 h-[10vh] floating top-10 flex justify-between items-center gap-5 bg-secondary bg-opacity-10">
         <h1 className="text-4xl text-primary font-bold">Abhishek
           <span className="text-muted-foreground"> Sahay</span>
         </h1>

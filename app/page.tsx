@@ -46,7 +46,7 @@ export default function Hero() {
                         <Image
                             src={profile}
                             alt='Profile'
-                            className='rounded-full w-[25em] md:w-[35em] lg:w-[40em] h-[25em] md:h-[35em] lg:h-[40em] object-cover z-10'
+                            className='rounded-full w-[25em] md:w-[35em] lg:w-[35em] h-[25em] md:h-[35em] lg:h-[35em] object-cover z-10'
                         />
                     </div>
                 </AnimatedBlock>

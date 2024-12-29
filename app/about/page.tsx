@@ -39,8 +39,22 @@ export default function About() {
     return (
         <section className="flex flex-wrap px-1 lg:p-6 py-10 items-center justify-around w-full h-[80vh] overflow-x-hidden">
             <Template>
+
+
                 <AnimatedBlock direction="left">
-                    <div className="my-10">
+                    <div className="relative inline-block">
+                        <div className="absolute inset-0 rounded-full animate-pulseCustom">
+                        </div>
+                        <Image
+                            src={college}
+                            alt='IIIT Sricity'
+                            className="rounded-full w-[25em] md:w-[35em] lg:w-[35em] h-[25em] md:h-[35em] lg:h-[35em] object-cover z-10"
+                        />
+                    </div>
+                </AnimatedBlock>
+
+                <AnimatedBlock direction="right">
+                    <div className="lg:ml-8 my-10">
                         <h1 className=" text-7xl font-montserrat text-muted-foreground font-bold">Enrolled In<br /><span className='text-primary'>IIIT Sricity</span><span className="text-muted-foreground">, Chittoor</span>
                         </h1>
                         <h1 className="mt-2 text-3xl font-roboto-condensed text-muted-foreground">
@@ -63,18 +77,6 @@ export default function About() {
                                 </a>
                             ))}
                         </div>
-                    </div>
-                </AnimatedBlock>
-
-                <AnimatedBlock direction="right">
-                    <div className="relative inline-block">
-                        <div className="absolute inset-0 rounded-full animate-pulseCustom">
-                        </div>
-                        <Image
-                            src={college}
-                            alt='IIIT Sricity'
-                            className="rounded-full w-[25em] md:w-[35em] lg:w-[40em] h-[25em] md:h-[35em] lg:h-[40em] object-cover z-10"
-                        />
                     </div>
                 </AnimatedBlock>
 
