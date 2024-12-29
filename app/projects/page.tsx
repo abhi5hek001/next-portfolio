@@ -7,6 +7,7 @@ import ggjImage from '@/public/projects/ggj.webp'
 import quotesWebsiteImage from '@/public/projects/quotes-website.webp'
 import { MdLink } from "react-icons/md";
 import { SiCss3, SiHtml5, SiJavascript, SiScratch, SiTailwindcss } from 'react-icons/si';
+import { TbApi } from "react-icons/tb";
 
 const projectList = [
     {
@@ -28,6 +29,7 @@ const projectList = [
         image: quotesWebsiteImage,
         link: 'https://abhi5hek001.github.io/Quote-Generator/',
         icons: [
+            TbApi,
             SiJavascript,
             SiHtml5,
             SiCss3,
