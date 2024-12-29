@@ -23,7 +23,7 @@ export default function Contact() {
     };    
 
     return (
-        <section className="flex flex-wrap sm:px-3 sm:mx-10 my-10 items-center justify-around w-full h-[80vh]">
+        <section className="flex flex-wrap sm:px-3 sm:mx-10 my-10 items-center justify-around w-full h-[80vh] overflow-x-hidden">
             <Template>
                 <AnimatedBlock direction="left">
                     <Card className="w-[25rem] relative rounded-lg shadow-[0_0px_35px_-15px_rgba(0,0,0,0.9)] hover:shadow-2xl shadow-primary inline-block mt-10 mb-10">
