@@ -82,7 +82,7 @@ export default function About() {
                             className="relative w-[25em] h-[32em] flex flex-col gap-5 justify-between shadow-[0_0px_35px_-15px_rgba(0,0,0,0.9)] hover:shadow-2xl shadow-primary items-center bg-secondary"
                         >
                             <div
-                                className={`absolute -top-4 -left-3 z-10 flex items-center gap-1 px-3 py-1 rounded-lg text-sm font-medium text-secondary bg-accent-foreground`}
+                                className={`absolute -top-3 -left-2 z-10 flex items-center gap-1 px-3 py-1 text-sm font-medium text-secondary bg-accent-foreground before:z-5 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:border-l-8 before:border-l-transparent before:border-t-8 before:border-t-accent-foreground`}
                             >
                                 {
                                     project.status.text === 'Completed' ? <GrDeploy className="mr-1" /> : <VscServerProcess className="mr-1" />
