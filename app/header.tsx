@@ -73,7 +73,7 @@ export default function Header() {
               <span className="absolute inset-0 bottom-0 h-[2px] bg-accent opacity-0 scale-x-0 origin-center transition-all duration-300 group-hover:opacity-100 group-hover:scale-x-100"></span>
             </a>
           ))}
-          <div className="mt-4">
+          <div className="mt-4 ml-4">
             <ThemeToggle />
           </div>
         </div>
