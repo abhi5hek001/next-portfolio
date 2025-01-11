@@ -1,6 +1,6 @@
 "use client"
 
-import { SiCss3, SiHtml5, SiJavascript, SiNextdotjs, SiReact, SiScratch, SiShadcnui, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import { SiCss3, SiHtml5, SiJavascript, SiReact, SiScratch, SiTailwindcss } from 'react-icons/si';
 import Template from '../template';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/app/components/ui/card';
 import Image from 'next/image';
