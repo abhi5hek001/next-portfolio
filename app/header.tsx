@@ -10,6 +10,7 @@ const navItems = [
   { label: "Home", url: "/" },
   { label: "About", url: "/about" },
   { label: "Projects", url: "/projects" },
+  { label: "Hackathons", url: "/hackathons" },
   { label: "Contact", url: "/contact" },
 ];
 

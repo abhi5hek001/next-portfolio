@@ -39,8 +39,6 @@ export default function About() {
     return (
         <section className="flex flex-wrap px-1 lg:p-6 py-10 items-center justify-around w-full h-[80vh] overflow-x-hidden">
             <Template>
-
-
                 <AnimatedBlock direction="left">
                     <div className="relative inline-block">
                         <div className="absolute inset-0 rounded-full animate-pulseCustom">

@@ -3,45 +3,17 @@
 import Template from '@/app/projects/template';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/app/components/ui/card';
 import Image from 'next/image';
-import ggjImage from '@/public/projects/ggj.webp';
 import chatClone from '@/public/projects/chatgpt-clone.webp';
 import quotesWebsiteImage from '@/public/projects/quotes-website.webp';
 import portfolioImage from '@/public/projects/portfolio.webp';
+import booklioImage from '@/public/projects/booklio.webp';
 import { MdLink } from "react-icons/md";
-import { SiCss3, SiHtml5, SiJavascript, SiNextdotjs, SiScratch, SiShadcnui, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import { SiCss3, SiHtml5, SiJavascript, SiNextdotjs,SiReact, SiShadcnui, SiTailwindcss, SiTypescript } from 'react-icons/si';
 import { TbApi } from "react-icons/tb";
 import { VscServerProcess } from "react-icons/vsc";
 import { GrDeploy } from "react-icons/gr";
 
 const projectList = [
-    {
-        title: 'Voice Controlled Gaming Studio | GGJ 2024',
-        description: 'This project is a voice controlled gaming website where you can control games with your voice.',
-        image: ggjImage,
-        link: 'https://abhi5hek001.github.io/Gaming-Hub/',
-        icons: [
-            SiScratch,
-            SiJavascript,
-            SiHtml5,
-            SiCss3,
-            SiTailwindcss,
-        ],
-        status: { text: "Completed" },
-    },
-    {
-        title: 'Daily Quotes Website',
-        description: 'A Quote Generator website which uses API to fetch quotes such as motivational and daily quotes.',
-        image: quotesWebsiteImage,
-        link: 'https://abhi5hek001.github.io/Quote-Generator/',
-        icons: [
-            TbApi,
-            SiJavascript,
-            SiHtml5,
-            SiCss3,
-            SiTailwindcss,
-        ],
-        status: { text: "Completed" },
-    },
     {
         title: 'Personal Portfolio Website',
         description: 'A Next.js-based personal portfolio website that highlights my skills, projects, and achievements.',
@@ -57,6 +29,19 @@ const projectList = [
         status: { text: "Completed" },
     },
     {
+        title: 'Booklio: Your Gateway to Buying and Selling Books',
+        description: 'Buy and sell books effortlessly. Explore a wide collection and connect with book lovers worldwide.',
+        image: booklioImage,
+        link: '',
+        icons: [
+            SiReact,
+            SiJavascript,
+            SiShadcnui,
+            SiTailwindcss,
+        ],
+        status: { text: "Undergoing" },
+    },    
+    {
         title: 'Google Gemini Based ChatGPT Clone',
         description: 'A Next.js based conversational AI interface similar to ChatGPT, powered by Google Gemini.',
         image: chatClone,
@@ -68,6 +53,19 @@ const projectList = [
             SiTailwindcss,
         ],
         status: { text: "Undergoing"},
+    },
+    {
+        title: 'Daily Quotes Website',
+        description: 'A Quote Generator website which uses API to fetch quotes such as motivational and daily quotes.',
+        image: quotesWebsiteImage,
+        link: 'https://abhi5hek001.github.io/Quote-Generator/',
+        icons: [
+            TbApi,
+            SiJavascript,
+            SiHtml5,
+            SiCss3,
+        ],
+        status: { text: "Completed" },
     },
 ];
 
