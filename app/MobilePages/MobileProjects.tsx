@@ -3,17 +3,18 @@
 import Template from '@/app/projects/template';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/app/components/ui/card';
 import Image from 'next/image';
+import projectList from '@/data/projectList.json';
 import { MdLink } from "react-icons/md";
-import { VscServerProcess } from "react-icons/vsc";
 import { GrDeploy } from "react-icons/gr";
-import projectList from '@/data/projectList.json'
-import { iconsMap } from '../icons';
+import { VscServerProcess } from "react-icons/vsc";
+import { iconsMap } from '@/app/icons';
 
 export default function Projects() {
     return (
         <section id='projects' className="flex flex-wrap px-2 items-center justify-center w-full">
+            <h1 className='mb-10 text-5xl font-montserrat font-bold text-foreground'>About Me</h1>
             <Template>
-                <div className='flex justify-center flex-wrap gap-8 my-20 sm:mx-5 md:mx-15 lg:mx-20'>
+                <div className='flex justify-center flex-wrap gap-8 my-10 sm:mx-5 md:mx-15 lg:mx-20'>
                     {projectList.map((project, idx) => (
                         <Card
                             key={idx}
@@ -37,7 +38,7 @@ export default function Projects() {
                                 />
                             </CardHeader>
                             <CardTitle className="text-primary text-xl px-5">
-                                <a key={project.title} href={project.link} className="flex justify-center items-center gap-1">
+                                <a href={project.link} className="flex justify-center items-center gap-1">
                                     {project.title}
                                     {
                                         project.status.text === "Completed" ? <MdLink className="h-6 w-10 text-accent-foreground hover:scale-125 transition-all duration-200" /> : ""

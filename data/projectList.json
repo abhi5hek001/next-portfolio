@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Personal Portfolio Website",
+        "description": "A Next.js-based personal portfolio website that highlights my skills, projects, and achievements.",
+        "image": "/projects/portfolio.webp",
+        "link": "https://next-portfolio-zeta-five.vercel.app/",
+        "icons": ["SiNextdotjs", "SiTypescript", "SiJavascript", "SiShadcnui", "SiTailwindcss"],
+        "status": {"text": "Completed"}
+    },
+    {
+        "title": "Booklio: Your Gateway to Buying and Selling Books",
+        "description": "Buy and sell books effortlessly. Explore a wide collection and connect with book lovers worldwide.",
+        "image": "/projects/booklio.webp",
+        "link": "",
+        "icons": ["SiReact", "SiJavascript", "SiShadcnui", "SiTailwindcss"],
+        "status": {"text": "Undergoing"}
+    },
+    {
+        "title": "Google Gemini Based ChatGPT Clone",
+        "description": "A Next.js based conversational AI interface similar to ChatGPT, powered by Google Gemini.",
+        "image": "/projects/chatgpt-clone.webp",
+        "link": "",
+        "icons": ["SiNextdotjs", "SiTypescript", "SiShadcnui", "SiTailwindcss"],
+        "status": {"text": "Undergoing"}
+    }
+]

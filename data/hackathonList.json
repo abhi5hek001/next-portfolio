@@ -1,0 +1,16 @@
+[
+    {
+        "title": "SafeSky v2.0 | Runner-up in Smart India Hackathon | SIH 2023",
+        "description": "This project is based on ariel recognition of hazardous atmosphere near industries.",
+        "image": "/hackathons/sih.webp",
+        "link": "",
+        "icons": ["SiReact", "SiJavascript", "SiHtml5", "SiCss3", "SiTailwindcss"]
+    },
+    {
+        "title": "Voice Controlled Gaming Studio | GGJ 2024",
+        "description": "This project is a voice controlled gaming website where you can control games with your voice.",
+        "image": "/hackathons/ggj.webp",
+        "link": "https://abhi5hek001.github.io/Gaming-Hub/",
+        "icons": ["SiScratch", "SiJavascript", "SiHtml5", "SiCss3", "SiTailwindcss"]
+    }
+]

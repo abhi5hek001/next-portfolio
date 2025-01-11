@@ -5,12 +5,13 @@ import Template from '@/app/template';
 import { AnimatedBlock } from '@/app/animatedBlock';
 import Image from 'next/image';
 import college from '@/public/iiit-sri-city.webp'
-import skillIconsData from '@/data/skillIcons.json'
-import {iconsMap} from '@/app/icons'
+import skillIconsData from '@/data/skillIcons.json';
+import { iconsMap } from '@/app/icons';
 
 export default function About() {
     return (
-        <section id='about' className="flex flex-wrap px-1 lg:p-6 py-10 items-center justify-around w-full h-[80vh] overflow-x-hidden">
+        <section id='about' className="flex flex-wrap px-1 lg:p-6 py-10 items-center justify-around w-full overflow-x-hidden">
+            <h1 className='mb-10 text-5xl font-montserrat font-bold text-foreground'>About Me</h1>
             <Template>
                 <AnimatedBlock direction="left">
                     <div className="relative inline-block">
@@ -26,7 +27,7 @@ export default function About() {
 
                 <AnimatedBlock direction="right">
                     <div className="lg:ml-8 my-10">
-                        <h1 className=" text-7xl font-montserrat text-muted-foreground font-bold">Enrolled In<br /><span className='text-primary'>IIIT Sricity</span><span className="text-muted-foreground">, Chittoor</span>
+                        <h1 className="text-7xl font-montserrat text-muted-foreground font-bold">Enrolled In<br /><span className='text-primary'>IIIT Sricity</span><span className="text-muted-foreground">, Chittoor</span>
                         </h1>
                         <h1 className="mt-2 text-3xl font-roboto-condensed text-muted-foreground">
                             <Typewriter
@@ -39,7 +40,7 @@ export default function About() {
                             />
                         </h1>
                         <div className="my-4 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                        {skillIconsData.skillIcons.map((iconName, idx) => {
+                            {skillIconsData.skillIcons.map((iconName, idx) => {
                                 const IconComponent = iconsMap[iconName];
                                 return (
                                     <a

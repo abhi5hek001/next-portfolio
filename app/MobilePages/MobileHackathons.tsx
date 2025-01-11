@@ -5,13 +5,14 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import Image from 'next/image';
 import { MdLink } from 'react-icons/md';
 import hackathonList from '@/data/hackathonList.json'
-import { iconsMap } from '../icons';
+import { iconsMap } from '@/app/icons';
 
 export default function hackathons() {
     return (
-        <section id='hackathons' className="flex flex-wrap px-2 items-center justify-center w-full">
+        <section id='hackathons' className="flex flex-wrap px-2 items-center justify-center w-full overflow-x-hidden">
+            <h1 className='mb-10 text-5xl font-montserrat font-bold text-foreground'>Hackathons</h1>
             <Template>
-                <div className='flex justify-center flex-wrap gap-8 my-20 sm:mx-5 md:mx-15 lg:mx-20'>
+                <div className='flex justify-center flex-wrap gap-8 my-10 sm:mx-5 md:mx-15 lg:mx-20'>
                     {hackathonList.map((hackathon, idx) => (
                         <Card
                             key={idx}
@@ -40,9 +41,9 @@ export default function hackathons() {
                                 </CardDescription>
                             </CardContent>
                             <CardFooter className="flex flex-wrap gap-2">
-                                {hackathon.icons.map((icon,i)=>{
+                                {hackathon.icons.map((icon, i) => {
                                     const Icon = iconsMap[icon];
-                                    return Icon ? <Icon key={i} className='w-7 h-7 text-primary' /> : null;
+                                    return Icon ? <Icon key={i} className="w-7 h-7 text-primary" /> : null;
                                 })}
                             </CardFooter>
                         </Card>
