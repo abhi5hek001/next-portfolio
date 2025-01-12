@@ -12,7 +12,7 @@ import { iconsMap } from '@/app/icons';
 export default function Projects() {
     return (
         <section id='projects' className="flex flex-wrap px-2 items-center justify-center w-full">
-            <h1 className='mb-10 text-5xl font-montserrat font-bold text-foreground'>About Me</h1>
+            <h1 className='mb-10 text-5xl font-montserrat font-bold text-foreground'>Projects</h1>
             <Template>
                 <div className='flex justify-center flex-wrap gap-8 my-10 sm:mx-5 md:mx-15 lg:mx-20'>
                     {projectList.map((project, idx) => (
