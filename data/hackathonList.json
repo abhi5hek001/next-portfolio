@@ -4,7 +4,7 @@
         "description": "This project is based on ariel recognition of hazardous atmosphere near industries.",
         "image": "/hackathons/sih.webp",
         "link": "",
-        "icons": ["SiReact", "SiJavascript", "SiHtml5", "SiCss3", "SiTailwindcss"]
+        "icons": ["SiReact", "SiJavascript", "TbBrandFramerMotion", "SiGooglemaps", "SiTailwindcss"]
     },
     {
         "title": "Voice Controlled Gaming Studio | GGJ 2024",
