@@ -3,7 +3,7 @@
         "title": "SafeSky v2.0 | Runner-up in Smart India Hackathon | SIH 2023",
         "description": "This project is based on ariel recognition of hazardous atmosphere near industries.",
         "image": "/hackathons/sih.webp",
-        "link": "",
+        "link": "https://safe-sky-v2.vercel.app/",
         "icons": ["SiReact", "SiJavascript", "SiLeaflet", "SiOpenstreetmap", "TbBrandFramerMotion", "SiTailwindcss"]
     },
     {
