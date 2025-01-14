@@ -5,12 +5,5 @@
         "image": "/hackathons/sih.webp",
         "link": "https://safe-sky-v2.vercel.app/",
         "icons": ["SiReact", "SiJavascript", "SiLeaflet", "SiOpenstreetmap", "TbBrandFramerMotion", "SiTailwindcss"]
-    },
-    {
-        "title": "Voice Controlled Gaming Studio | GGJ 2024",
-        "description": "This project is a voice controlled gaming website where you can control games with your voice.",
-        "image": "/hackathons/ggj.webp",
-        "link": "https://abhi5hek001.github.io/Gaming-Hub/",
-        "icons": ["SiScratch", "SiJavascript", "SiHtml5", "SiCss3", "SiTailwindcss"]
     }
 ]
