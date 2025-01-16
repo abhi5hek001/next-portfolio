@@ -11,8 +11,14 @@ import profile from '@/public/profile.webp'
 import { isMobile } from "react-device-detect";
 import MobileSPA from "@/app/MobileSPA";
 
-const RESUME_FILE_ID = '13EL39XKZ_qra4jWqZ_gBW2lY-lQrRmFs'
-const RESUME_LINK = `https://drive.google.com/uc?export=download&id=${RESUME_FILE_ID}`
+const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/resume/resume.pdf';
+    link.download = 'Resume_AbhishekSahay.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
 
 export default function Hero() {
     const socialIcons = [
@@ -74,12 +80,7 @@ export default function Hero() {
                                 </h1>
                                 <Button
                                     className='my-5'
-                                    onClick={() => {
-                                        window.open(
-                                            RESUME_LINK,
-                                            '_blank'
-                                        );
-                                    }}
+                                    onClick={handleResumeDownload}
                                 >
                                     Resume
                                     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color={`text-accent-foreground`} ><path d="M0 0h24v24H0z" fill="none"></path><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></svg>
