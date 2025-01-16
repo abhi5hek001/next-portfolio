@@ -11,15 +11,6 @@ import profile from '@/public/profile.webp'
 import { isMobile } from "react-device-detect";
 import MobileSPA from "@/app/MobileSPA";
 
-const handleResumeDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/resume/resume.pdf';
-    link.download = 'Resume_AbhishekSahay.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-};
-
 export default function Hero() {
     const socialIcons = [
         {
@@ -44,6 +35,13 @@ export default function Hero() {
             link: "https://github.com/abhi5hek001",
         },
     ];
+
+    const handleResumeDownload = () => {
+        window.open(
+            "https://drive.google.com/drive/folders/1ZYK56olAMsi0nMtHuws6GsrOunZSw-nX?usp=drive_link",
+            "_blank"
+        );
+    };
 
     return (
         <>

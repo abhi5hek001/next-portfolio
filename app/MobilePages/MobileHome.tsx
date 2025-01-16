@@ -9,15 +9,6 @@ import Image from 'next/image';
 import profile from '@/public/profile.webp'
 import {motion} from 'framer-motion'
 
-const handleResumeDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/resume/resume.pdf';
-    link.download = 'Resume_AbhishekSahay.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-};
-
 export default function MobileHome() {
     const socialIcons = [
         {
@@ -42,6 +33,13 @@ export default function MobileHome() {
             link: "https://github.com/abhi5hek001",
         },
     ];
+
+    const handleResumeDownload = () => {
+        window.open(
+            "https://drive.google.com/drive/folders/1ZYK56olAMsi0nMtHuws6GsrOunZSw-nX?usp=drive_link",
+            "_blank"
+        );
+    };
 
     return (
         <>
