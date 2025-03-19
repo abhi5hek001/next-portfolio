@@ -69,7 +69,13 @@ export default function Hero() {
                                 <h1 className="mt-2 font-roboto-condensed text-3xl text-muted-foreground">
                                     <Typewriter
                                         options={{
-                                            strings: ['A Frontend Developer', 'A Backend Developer'],
+                                            strings: [
+                                                'Aspiring Software Developer',
+                                                'Problem Solver',
+                                                'Full-Stack Developer',
+                                                'Cloud Enthusiast',
+                                                'AI & ML Explorer',
+                                              ],
                                             autoStart: true,
                                             loop: true,
                                             delay: 90

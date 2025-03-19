@@ -5,5 +5,19 @@
         "image": "/hackathons/sih.webp",
         "link": "https://safe-sky-v2.vercel.app/",
         "icons": ["SiReact", "SiJavascript", "SiLeaflet", "SiOpenstreetmap", "TbBrandFramerMotion", "SiTailwindcss"]
+    },
+    {
+        "title": "Global Game Jam 2024 | Voice-Controlled Gaming Studio",
+        "description": "Developed a voice-controlled gaming website featuring multiple games that can be played using voice commands.",
+        "image": "/hackathons/ggj.webp",
+        "link": "",
+        "icons": ["MdRecordVoiceOver", "SiScratch", "SiReact", "SiJavascript"]
+    },
+    {
+        "title": "Swasthik: International Healthcare Hackathon 2025",
+        "description": "Innovative AI-powered vital monitoring system designed to transform patient care through personalized monitoring and analysis.",
+        "image": "/hackathons/national-healthcare-hackathon.webp",
+        "link": "",
+        "icons": ["FaHeartPulse", "MdOutlineAddAlert", "SiReact", "SiJavascript", "SiNodedotjs"]
     }
 ]

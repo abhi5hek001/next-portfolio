@@ -29,7 +29,9 @@ export default function hackathons() {
                             <CardTitle className="text-primary text-xl px-5">
                                 <a key={hackathon.title} href={hackathon.link} className="flex justify-center items-center gap-1">
                                     {hackathon.title}
-                                    <MdLink className="h-6 w-10 text-accent-foreground hover:scale-125 transition-all duration-200" />
+                                    {
+                                        hackathon.link && <MdLink className="h-6 w-10 text-accent-foreground hover:scale-125 transition-all duration-200" />
+                                    }
                                 </a>
                             </CardTitle>
                             <CardContent className="px-5">

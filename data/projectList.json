@@ -16,11 +16,35 @@
         "status": {"text": "Undergoing"}
     },
     {
-        "title": "Google Gemini Based ChatGPT Clone",
-        "description": "A Next.js based conversational AI interface similar to ChatGPT, powered by Google Gemini.",
-        "image": "/projects/chatgpt-clone.webp",
+        "title": "Bachelor Thesis Project: Transformer Based 3D Hand Pose Estimation from Single RGB Images",
+        "description": "Estimate accurate 3D hand poses from a single RGB image, tackling challenges like articulation, occlusion, and misalignment.",
+        "image": "/projects/3d-hand.webp",
         "link": "",
-        "icons": ["SiGooglegemini", "SiNextdotjs", "SiTypescript", "SiShadcnui", "SiTailwindcss"],
+        "icons": ["SiMediapipe", "GiHand", "Md3dRotation", "FaVrCardboard"],
         "status": {"text": "Undergoing"}
+    },
+    {
+        "title": "Brain Computer Interaction: EEG-Based Detection of Sleep Disorders Using ML",
+        "description": "An EEG-PSG-based system utilizes ML to analyze sleep stages and detect sleep disorders efficiently.",
+        "image": "/projects/bci-sleep-disorder.webp",
+        "link": "",
+        "icons": ["FaBedPulse", "GiNightSleep"],
+        "status": {"text": "Undergoing"}
+    },
+    {
+        "title": "BioInformatics: Genome Mutation-Based Cancer Identification Using DL",
+        "description": "Identification of cancer based on genomic information that offers a new direction for disease diagnosis.",
+        "image": "/projects/bi-cancer-detection.webp",
+        "link": "",
+        "icons": ["MdBiotech", "GiDna2"],
+        "status": {"text": "Undergoing"}
+    },
+    {
+        "title": "Computer Vision: Harris Corner-Based Feature Detection and Matching",
+        "description": "Harris corner detection, SIFT descriptors, and feature matching implementation",
+        "image": "/projects/cv-project.webp",
+        "link": "https://github.com/abhi5hek001/CV-Project",
+        "icons": ["IoIosEye", "FaImage", "PiCornersOutThin"],
+        "status": {"text": "Completed"}
     }
 ]
