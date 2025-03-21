@@ -1,4 +1,5 @@
-import { ISourceOptions } from "tsparticles-engine";
+import { ISourceOptions } from "tsparticles-engine";\
+import { isMobile } from "react-device-detect";
 
 const particlesConfig: ISourceOptions = {
     fullScreen: { enable: false },
@@ -7,7 +8,7 @@ const particlesConfig: ISourceOptions = {
         color: { value: "" }, 
     },
     particles: {
-        number: { value: 80 },
+        number: { value: isMobile ? 20 : 80 },
         shape: { type: "dots" },
         color: { value: "#000" },
         opacity: { value: 0.5 },
