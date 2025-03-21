@@ -1,4 +1,4 @@
-import { ISourceOptions } from "tsparticles-engine";\
+import { ISourceOptions } from "tsparticles-engine";
 import { isMobile } from "react-device-detect";
 
 const particlesConfig: ISourceOptions = {
