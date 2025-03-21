@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "@/app/globals.css";
 import { ThemeProvider } from "@/app/components/theme-provider"
 import Header from "@/app/header";
+import ParticlesBackground from "@/app/components/ParticlesBackground";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,6 +31,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+
+        <ParticlesBackground />
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
