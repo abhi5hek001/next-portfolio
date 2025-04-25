@@ -32,12 +32,12 @@
         "status": {"text": "Undergoing"}
     },
     {
-        "title": "BioInformatics: Genome Mutation-Based Cancer Identification Using DL",
+        "title": "CarciTrack: Genome Mutation-Based Cancer Identification Using DL",
         "description": "Identification of cancer based on genomic information that offers a new direction for disease diagnosis.",
         "image": "/projects/bi-cancer-detection.webp",
-        "link": "",
+        "link": "https://carcitrack.streamlit.app/",
         "icons": ["MdBiotech", "GiDna2"],
-        "status": {"text": "Undergoing"}
+        "status": {"text": "Completed"}
     },
     {
         "title": "Computer Vision: Harris Corner-Based Feature Detection and Matching",
