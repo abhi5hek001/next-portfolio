@@ -73,7 +73,7 @@ export default function Contact() {
                             <FaPhone className="mr-2 text-accent-foreground" /> +91 96967 88599
                         </a>
                         <a className="flex items-center mb-2 text-primary underline-offset-4 hover:underline cursor-pointer">
-                            <FaMapMarkerAlt className="mr-2 text-accent-foreground" /> Boys Hostel 3, IIIT Sri City, Andhra Pradesh
+                            <FaMapMarkerAlt className="mr-2 text-accent-foreground" /> Boys Hostel 2, IIIT Sri City, Andhra Pradesh
                         </a>
                     </div>
                 </AnimatedBlock>

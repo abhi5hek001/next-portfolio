@@ -12,8 +12,24 @@
         "description": "Buy and sell books effortlessly. Explore a wide collection and connect with book lovers worldwide.",
         "image": "/projects/booklio.webp",
         "link": "https://github.com/abhi5hek001/Booklio",
-        "icons": ["SiReact", "SiJavascript", "FaStripe", "TbBrandFramerMotion", "SiShadcnui", "SiTailwindcss"],
-        "status": {"text": "Undergoing"}
+        "icons": ["SiReact", "SiNodedotjs", "SiJavascript", "SiMongodb", "SiDocker", "SiRedis", "SiJsonwebtokens"],
+        "status": {"text": "Completed"}
+    },
+    {
+        "title": "PingItUp: Chat. Connect. Collaborate",
+        "description": "A real-time chat application to share moments, and connect face-to-face with effortless video calls.",
+        "image": "/projects/ping-it-up.png",
+        "link": "https://ping-it-up.vercel.app/",
+        "icons": ["SiReact", "SiNodedotjs", "SiExpress", "SiSocketdotio", "SiMongodb", "SiCloudinary", "SiWebrtc"],
+        "status": {"text": "Completed"}
+    },
+    {
+        "title": "CheckInn: Hotel Management Application",
+        "description": "Buy and sell books effortlessly. Explore a wide collection and connect with book lovers worldwide.",
+        "image": "/projects/checkInn.png",
+        "link": "https://github.com/abhi5hek001/CheckInn",
+        "icons": ["FaJava", "SiMysql", "SiSpringboot", "SiSpringsecurity", "SiJsonwebtokens", "SiApachemaven"],
+        "status": {"text": "Completed"}
     },
     {
         "title": "Bachelor Thesis Project: Transformer Based 3D Hand Pose Estimation from Single RGB Images",
@@ -29,7 +45,7 @@
         "image": "/projects/bci-sleep-disorder.webp",
         "link": "",
         "icons": ["FaBedPulse", "GiNightSleep"],
-        "status": {"text": "Undergoing"}
+        "status": {"text": "Completed"}
     },
     {
         "title": "CarciTrack: Genome Mutation-Based Cancer Identification Using DL",

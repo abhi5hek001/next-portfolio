@@ -55,7 +55,7 @@ export default function Projects() {
                             <CardFooter className="flex flex-wrap gap-2">
                                 {project.icons.map((icon, i) => {
                                     const Icon = iconsMap[icon];
-                                    return Icon ? <Icon key={i} className="w-7 h-7 text-primary" /> : null;
+                                    return Icon ? <Icon key={i} className="w-10 h-10 text-primary" /> : null;
                                 })}
                             </CardFooter>
                         </Card>

@@ -6,7 +6,7 @@ import { AnimatedBlock } from '@/app/animatedBlock';
 import Image from 'next/image';
 import college from '@/public/iiit-sri-city.webp'
 import skillIconsData from '@/data/skillIcons.json';
-import { iconsMap } from '@/app/icons';
+import { FallbackIcon, iconsMap } from '@/app/icons';
 
 export default function About() {
     return (
@@ -41,7 +41,7 @@ export default function About() {
                         </h1>
                         <div className="my-4 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                             {skillIconsData.skillIcons.map((iconName, idx) => {
-                                const IconComponent = iconsMap[iconName];
+                                const IconComponent = iconsMap[iconName] || FallbackIcon;
                                 return (
                                     <a
                                         key={idx}

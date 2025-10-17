@@ -1,21 +1,32 @@
 import { FaJava, FaImage, FaVrCardboard } from "react-icons/fa";
 import { IconType } from "react-icons/lib";
-import { SiNextdotjs, SiTypescript, SiShadcnui, SiTailwindcss, SiJavascript, SiReact, SiHtml5, SiCss3, SiCanva, SiFigma, SiLinux, SiCplusplus, SiC, SiPython, SiPandas, SiNumpy, SiMysql, SiGit, SiNodedotjs, SiExpress, SiMongodb, SiGooglegemini, SiGooglemaps, SiLeaflet, SiOpenstreetmap, SiScratch } from "react-icons/si";
+import { 
+    SiNextdotjs, SiTypescript, SiShadcnui, SiTailwindcss, SiJavascript, SiReact, 
+    SiHtml5, SiCss3, SiCanva, SiFigma, SiLinux, SiCplusplus, SiC, SiPython, 
+    SiPandas, SiNumpy, SiMysql, SiGit, SiNodedotjs, SiExpress, SiMongodb, 
+    SiGooglegemini, SiGooglemaps, SiLeaflet, SiOpenstreetmap, SiScratch,
+    SiJsonwebtokens, SiSocketdotio, SiCloudinary, SiWebrtc, SiApachemaven
+} from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { FaStripe } from "react-icons/fa";
 import { GrGraphQl } from "react-icons/gr";
 import { GiNightSleep, GiDna2, GiHand } from "react-icons/gi";
-import { FaBedPulse } from "react-icons/fa6";
+import { FaBedPulse, FaHeartPulse } from "react-icons/fa6"; 
 import { MdBiotech, Md3dRotation, MdRecordVoiceOver, MdOutlineAddAlert } from "react-icons/md";
 import { IoIosEye } from "react-icons/io";
 import { PiCornersOutThin } from "react-icons/pi";
 import { SiMediapipe } from "react-icons/si";
-import { FaHeartPulse } from "react-icons/fa6";
+import { Zap } from "lucide-react"; 
+
+import SpringBootIcon from "@/icons/spring-boot.svg";
+import RedisIcon from "@/icons/redis.svg";
+import DockerIcon from "@/icons/docker.svg";
+import JavaIcon from "@/icons/java.svg";
 
 export const iconsMap: Record<string, IconType> = {
     "SiNextdotjs": SiNextdotjs,
     "SiTypescript": SiTypescript,
-    "SiJavaScript": SiJavascript,
+    "SiJavascript": SiJavascript,
     "SiReact": SiReact,
     "SiShadcnui": SiShadcnui,
     "SiTailwindcss": SiTailwindcss,
@@ -23,7 +34,6 @@ export const iconsMap: Record<string, IconType> = {
     "SiCss3": SiCss3,
     "SiMongodb": SiMongodb,
     "SiExpress": SiExpress,
-    "SiJavascript": SiJavascript,
     "SiNodedotjs": SiNodedotjs,
     "SiGit": SiGit,
     "SiMysql": SiMysql,
@@ -57,5 +67,17 @@ export const iconsMap: Record<string, IconType> = {
     "FaVrCardboard": FaVrCardboard,
     "MdRecordVoiceOver": MdRecordVoiceOver,
     "FaHeartPulse": FaHeartPulse,
-    "MdOutlineAddAlert": MdOutlineAddAlert  
-}
+    "MdOutlineAddAlert": MdOutlineAddAlert,
+    "SiJsonwebtokens": SiJsonwebtokens,
+    "SiSocketdotio": SiSocketdotio,
+    "SiCloudinary": SiCloudinary,
+    "SiWebrtc": SiWebrtc,
+    "SiSpringboot": SpringBootIcon,
+    "SiJava": JavaIcon,
+    "SiRedis": RedisIcon,
+    "SiDocker": DockerIcon,
+    "SiApachemaven": SiApachemaven,
+};
+
+// Export a fallback icon to use when an icon name is not found in the map
+export const FallbackIcon = Zap;
