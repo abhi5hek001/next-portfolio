@@ -74,7 +74,6 @@ export default function Hero() {
                                                 'Problem Solver',
                                                 'Full-Stack Developer',
                                                 'Cloud Enthusiast',
-                                                'AI & ML Explorer',
                                               ],
                                             autoStart: true,
                                             loop: true,

@@ -32,7 +32,7 @@ export default function About() {
                         <h1 className="mt-2 text-3xl font-roboto-condensed text-muted-foreground">
                             <Typewriter
                                 options={{
-                                    strings: ['Pursuing B.Tech', 'Computer Science Engineer', 'Pre-Final Year Student'],
+                                    strings: ['Pursuing B.Tech', 'Computer Science Engineer', 'Final Year Student'],
                                     autoStart: true,
                                     loop: true,
                                     delay: 90

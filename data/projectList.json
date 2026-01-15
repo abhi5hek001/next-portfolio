@@ -3,64 +3,124 @@
         "title": "Personal Portfolio Website",
         "description": "A Next.js-based personal portfolio website that highlights my skills, projects, and achievements.",
         "image": "/projects/portfolio.webp",
-        "link": "https://next-portfolio-zeta-five.vercel.app/",
-        "icons": ["SiNextdotjs", "SiTypescript", "SiJavascript", "TbBrandFramerMotion", "SiShadcnui", "SiTailwindcss"],
-        "status": {"text": "Completed"}
+        "link": "https://sahayabhishek.tech",
+        "icons": [
+            "SiNextdotjs",
+            "SiTypescript",
+            "SiJavascript",
+            "TbBrandFramerMotion",
+            "SiShadcnui",
+            "SiTailwindcss",
+            "FaAws"
+        ],
+        "status": {
+            "text": "Completed"
+        }
     },
     {
         "title": "Booklio: Your Gateway to Buying and Selling Books",
         "description": "Buy and sell books effortlessly. Explore a wide collection and connect with book lovers worldwide.",
         "image": "/projects/booklio.webp",
         "link": "https://github.com/abhi5hek001/Booklio",
-        "icons": ["SiReact", "SiNodedotjs", "SiJavascript", "SiMongodb", "SiDocker", "SiRedis", "SiJsonwebtokens"],
-        "status": {"text": "Completed"}
+        "icons": [
+            "SiReact",
+            "SiJavascript",
+            "SiMongodb",
+            "SiJsonwebtokens",
+            "SiDocker",
+            "SiRedis",
+            "FaAws"
+        ],
+        "status": {
+            "text": "Completed"
+        }
     },
     {
         "title": "PingItUp: Chat. Connect. Collaborate",
         "description": "A real-time chat application to share moments, and connect face-to-face with effortless video calls.",
         "image": "/projects/ping-it-up.png",
         "link": "https://ping-it-up.vercel.app/",
-        "icons": ["SiReact", "SiNodedotjs", "SiExpress", "SiSocketdotio", "SiMongodb", "SiCloudinary", "SiWebrtc"],
-        "status": {"text": "Completed"}
+        "icons": [
+            "SiReact",
+            "SiNodedotjs",
+            "SiExpress",
+            "SiSocketdotio",
+            "SiMongodb",
+            "SiCloudinary",
+            "SiWebrtc"
+        ],
+        "status": {
+            "text": "Completed"
+        }
     },
     {
         "title": "CheckInn: Hotel Management Application",
         "description": "Buy and sell books effortlessly. Explore a wide collection and connect with book lovers worldwide.",
         "image": "/projects/checkInn.png",
         "link": "https://github.com/abhi5hek001/CheckInn",
-        "icons": ["FaJava", "SiMysql", "SiSpringboot", "SiSpringsecurity", "SiJsonwebtokens", "SiApachemaven"],
-        "status": {"text": "Completed"}
+        "icons": [
+            "FaJava",
+            "SiMysql",
+            "SiSpring",
+            "SiJsonwebtokens"
+        ],
+        "status": {
+            "text": "Completed"
+        }
+    },
+    {
+        "title": "CarciTrack: Genome Mutation-Based Cancer Identification Using DL",
+        "description": "Identification of cancer based on genomic information that offers a new direction for disease diagnosis.",
+        "image": "/projects/bi-cancer-detection.webp",
+        "link": "https://github.com/abhi5hek001/mutation-cancer-identification",
+        "icons": [
+            "MdBiotech",
+            "GiDna2"
+        ],
+        "status": {
+            "text": "Completed"
+        }
     },
     {
         "title": "Bachelor Thesis Project: Transformer Based 3D Hand Pose Estimation from Single RGB Images",
         "description": "Estimate accurate 3D hand poses from a single RGB image, tackling challenges like articulation, occlusion, and misalignment.",
         "image": "/projects/3d-hand.webp",
         "link": "",
-        "icons": ["SiMediapipe", "GiHand", "Md3dRotation", "FaVrCardboard"],
-        "status": {"text": "Undergoing"}
+        "icons": [
+            "SiMediapipe",
+            "GiHand",
+            "Md3dRotation",
+            "FaVrCardboard"
+        ],
+        "status": {
+            "text": "Completed"
+        }
     },
     {
         "title": "Brain Computer Interaction: EEG-Based Detection of Sleep Disorders Using ML",
         "description": "An EEG-PSG-based system utilizes ML to analyze sleep stages and detect sleep disorders efficiently.",
         "image": "/projects/bci-sleep-disorder.webp",
         "link": "",
-        "icons": ["FaBedPulse", "GiNightSleep"],
-        "status": {"text": "Completed"}
-    },
-    {
-        "title": "CarciTrack: Genome Mutation-Based Cancer Identification Using DL",
-        "description": "Identification of cancer based on genomic information that offers a new direction for disease diagnosis.",
-        "image": "/projects/bi-cancer-detection.webp",
-        "link": "https://carcitrack.streamlit.app/",
-        "icons": ["MdBiotech", "GiDna2"],
-        "status": {"text": "Completed"}
+        "icons": [
+            "FaBedPulse",
+            "GiNightSleep"
+        ],
+        "status": {
+            "text": "Completed"
+        }
     },
     {
         "title": "Computer Vision: Harris Corner-Based Feature Detection and Matching",
         "description": "Harris corner detection, SIFT descriptors, and feature matching implementation",
         "image": "/projects/cv-project.webp",
         "link": "https://github.com/abhi5hek001/CV-Project",
-        "icons": ["IoIosEye", "FaImage", "PiCornersOutThin"],
-        "status": {"text": "Completed"}
+        "icons": [
+            "IoIosEye",
+            "FaImage",
+            "PiCornersOutThin"
+        ],
+        "status": {
+            "text": "Completed"
+        }
     }
 ]

@@ -5,9 +5,9 @@ import {
     SiHtml5, SiCss3, SiCanva, SiFigma, SiLinux, SiCplusplus, SiC, SiPython, 
     SiPandas, SiNumpy, SiMysql, SiGit, SiNodedotjs, SiExpress, SiMongodb, 
     SiGooglegemini, SiGooglemaps, SiLeaflet, SiOpenstreetmap, SiScratch,
-    SiJsonwebtokens, SiSocketdotio, SiCloudinary, SiWebrtc, SiApachemaven
+    SiJsonwebtokens, SiSocketdotio, SiCloudinary, SiWebrtc, SiRedis, SiSpring, SiRedux, SiGithubactions, SiSwagger, 
 } from "react-icons/si";
-import { TbBrandFramerMotion } from "react-icons/tb";
+import { TbBrandFramerMotion, TbBrandOauth } from "react-icons/tb";
 import { FaStripe } from "react-icons/fa";
 import { GrGraphQl } from "react-icons/gr";
 import { GiNightSleep, GiDna2, GiHand } from "react-icons/gi";
@@ -17,11 +17,8 @@ import { IoIosEye } from "react-icons/io";
 import { PiCornersOutThin } from "react-icons/pi";
 import { SiMediapipe } from "react-icons/si";
 import { Zap } from "lucide-react"; 
+import { FaAws, FaDocker } from "react-icons/fa";
 
-import SpringBootIcon from "@/icons/spring-boot.svg";
-import RedisIcon from "@/icons/redis.svg";
-import DockerIcon from "@/icons/docker.svg";
-import JavaIcon from "@/icons/java.svg";
 
 export const iconsMap: Record<string, IconType> = {
     "SiNextdotjs": SiNextdotjs,
@@ -72,11 +69,15 @@ export const iconsMap: Record<string, IconType> = {
     "SiSocketdotio": SiSocketdotio,
     "SiCloudinary": SiCloudinary,
     "SiWebrtc": SiWebrtc,
-    "SiSpringboot": SpringBootIcon,
-    "SiJava": JavaIcon,
-    "SiRedis": RedisIcon,
-    "SiDocker": DockerIcon,
-    "SiApachemaven": SiApachemaven,
+    "FaAws": FaAws,
+    "FaDocker": FaDocker,
+    "SiRedis": SiRedis,
+    "SiSpring": SiSpring,
+    "SiRedux": SiRedux,
+    "SiGithubactions": SiGithubactions,
+    "TbBrandOauth": TbBrandOauth,
+    "SiSwagger": SiSwagger
+
 };
 
 // Export a fallback icon to use when an icon name is not found in the map
