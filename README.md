@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Portfolio
+A high-performance, SEO-optimized developer portfolio built with Next.js, architected on AWS, and fully automated with GitHub Actions.
 
-## Getting Started
+## 🚀 Live Demo: 
 
-First, run the development server:
+#### Visit website: [https://sahayabhishek.tech](https://sahayabhishek.tech)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠 Tech Stack
+| Layer    | Technology                                   |
+| -------- | -------------------------------------------- |
+| Frontend | Next.js, Framer Motion, ShadCN, Tailwind CSS |
+| Hosting  | Amazon S3 (Object Storage)                   |
+| CDN      | Amazon CloudFront (Global Edge Delivery)     |
+| DNS      | Cloudflare (DNS Management)                  |
+| CI/CD    | GitHub Actions (Automated Pipelines)         |
+| Security | AWS ACM (SSL/TLS Certificates)               |
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏗 Architecture Features
+- Static Site Generation (SSG): Next.js pre-renders every page into static HTML for near-instant load times and perfect SEO.
+- Global Edge Caching: Integrated with Amazon CloudFront to serve content from the nearest global edge location, reducing latency to <30ms.
+- Automated Routing: Implemented custom CloudFront Functions to handle clean URL routing (e.g., /about → /about/index.html) on a static host.
+- Zero-Touch Deployment: A fully automated pipeline that builds, syncs to S3, and purges both AWS and Cloudflare caches on every git push.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🤖 CI/CD Workflow
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The deployment pipeline is triggered on every push to the main branch:
+- Build: Node.js environment builds the Next.js project into a static out/ directory.
+- Sync: The out/ folder is synchronized with the S3 Bucket (ap-south-1) with the --delete flag to ensure a clean state.
+- Invalidate: An invalidation command is sent to CloudFront to clear the global edge cache.
+- Purge: A final API call to Cloudflare purges the DNS-level cache, ensuring the new version is live globally.
